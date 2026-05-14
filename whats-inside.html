@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Какво има вътре — FuelBox</title>
+    <meta name="author" content="FuelBox" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FuelBox — Премиум фитнес абонамент" />
+    <meta
+      name="twitter:description"
+      content="Месечни подбрани фитнес добавки, доставяни до вратата ви. Протеин, витамини и още."
+    />
+    <meta
+      name="description"
+      content="Разгледайте the premium fitness supplements inside every FuelBox. Протеин, creatine, vitamins and more."
+    />
+    <meta property="og:title" content="Какво има вътре — FuelBox" />
+    <meta
+      property="og:description"
+      content="Premium supplements in every box."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  
+    <link rel="icon" type="image/png" href="logo.png">
+  </head>
+  <body>
+    <header
+      class="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl"
+    >
+      <div
+        class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+      >
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="logo.png" alt="FuelBox Logo" class="h-8 w-auto" />
+          <span class="text-lg font-bold tracking-tight text-foreground"
+            >FuelBox</span
+          >
+        </a>
+        <nav class="hidden items-center gap-1 lg:flex">
+          <a href="index.html" class="nav-link">Начало</a
+          ><a href="how-it-works.html" class="nav-link">Как работи</a>
+          <a href="plans.html" class="nav-link">Планове</a
+          ><a
+            class="nav-link-active"
+            href="whats-inside.html"
+            data-status="active"
+            aria-current="page"
+            >Какво има вътре</a
+          ><a href="testimonials.html" class="nav-link">Отзиви</a
+          ><a href="about.html" class="nav-link">За нас</a
+          ><a href="faq.html" class="nav-link">Чести въпроси</a>
+        </nav>
+        <div class="hidden lg:flex lg:items-center lg:gap-8">
+          <div class="flex items-center gap-2" style="margin-right: 1.5rem">
+            <button class="text-sm font-semibold text-neon">BG</button
+            ><span class="text-border">/</span
+            ><button
+              onclick="switchLanguage('en')"
+              class="text-sm font-semibold text-muted-foreground hover:text-neon transition-colors"
+            >
+              EN
+            </button>
+          </div>
+          <a href="plans.html"
+            ><button class="btn-primary">Абонирай се</button></a
+          >
+        </div>
+        <button
+          class="flex h-10 w-10 items-center justify-center rounded-md text-foreground lg:hidden"
+          aria-label="Toggle menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="overflow-hidden transition-all duration-300 ease-in-out border-t border-border/50 bg-background/95 backdrop-blur-xl lg:hidden max-h-0 opacity-0 border-t-transparent"
+      >
+        <nav class="flex flex-col gap-1 p-4">
+          <a href="index.html" class="nav-link-mobile">Начало</a
+          ><a href="how-it-works.html" class="nav-link-mobile">Как работи</a>
+          <a href="plans.html" class="nav-link-mobile">Планове</a
+          ><a
+            class="nav-link-mobile-active"
+            href="whats-inside.html"
+            data-status="active"
+            aria-current="page"
+            >Какво има вътре</a
+          ><a href="testimonials.html" class="nav-link-mobile">Отзиви</a
+          ><a href="about.html" class="nav-link-mobile">За нас</a
+          ><a href="faq.html" class="nav-link-mobile">Чести въпроси</a>
+          <div
+            class="mt-4 flex items-center justify-center gap-4 rounded-md border border-border/50 py-2"
+          >
+            <button class="text-sm font-semibold text-neon">BG</button
+            ><span class="text-border">/</span
+            ><button
+              onclick="switchLanguage('en')"
+              class="text-sm font-semibold text-muted-foreground hover:text-neon transition-colors"
+            >
+              EN
+            </button>
+          </div>
+          <a href="plans.html" class="mt-2"
+            ><button class="btn-primary-lg-full">Абонирай се</button></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="pt-16">
+      <!--$-->
+      <div>
+        <section class="py-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-3xl text-center">
+              <p class="section-subtitle">Какво има вътре</p>
+              <h1 class="mt-3 text-4xl font-extrabold sm:text-5xl">
+                Премиум продукти,
+                <span class="text-gradient-neon">във всяка кутия</span>
+              </h1>
+              <p class="mt-6 text-lg text-muted-foreground">
+                Всеки продукт е лабораторно тестван и избран от сертифицирани
+                диетолози.
+              </p>
+            </div>
+            <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div class="feature-card-group">
+                <span class="text-4xl"
+                  ><svg
+                    class="text-neon"
+                    style="filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6))"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M17 10a5 5 0 0 0-10 0" />
+                    <path d="M7 10v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-9" />
+                    <path d="M12 14v1" />
+                    <path d="M9 13v1" />
+                    <path d="M15 13v1" /></svg></span
+                ><span
+                  class="mt-3 block text-xs font-semibold uppercase tracking-wider text-neon"
+                  >Протеин</span
+                >
+                <h3 class="mt-1 text-lg font-bold">
+                  Суроватъчен протеин изолат
+                </h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  25g чист протеин на доза. Бързо абсорбиращ се и наличен в
+                  множество вкусове.
+                </p>
+              </div>
+              <div class="feature-card-group">
+                <span class="text-4xl"
+                  ><svg
+                    class="text-neon"
+                    style="filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6))"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.48 12H2"
+                    /></svg></span
+                ><span
+                  class="mt-3 block text-xs font-semibold uppercase tracking-wider text-neon"
+                  >Постижения</span
+                >
+                <h3 class="mt-1 text-lg font-bold">Креатин монохидрат</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  5g креатин за сила, мощност и мускулно възстановяване.
+                  Най-изследваната добавка.
+                </p>
+              </div>
+              <div class="feature-card-group">
+                <span class="text-4xl"
+                  ><svg
+                    class="text-neon"
+                    style="filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6))"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"
+                    />
+                    <path d="m8.5 8.5 7 7" /></svg></span
+                ><span
+                  class="mt-3 block text-xs font-semibold uppercase tracking-wider text-neon"
+                  >Здраве</span
+                >
+                <h3 class="mt-1 text-lg font-bold">Ежедневен мултивитамин</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Пълен комплекс от витамини и минерали. Подкрепете имунната
+                  система.
+                </p>
+              </div>
+              <div class="feature-card-group">
+                <span class="text-4xl"
+                  ><svg
+                    class="text-neon"
+                    style="filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6))"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polygon
+                      points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"
+                    /></svg></span
+                ><span
+                  class="mt-3 block text-xs font-semibold uppercase tracking-wider text-neon"
+                  >Енергия</span
+                >
+                <h3 class="mt-1 text-lg font-bold">Азотен бустер</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  200mg кофеин, бета-аланин и цитрулин за експлозивна енергия и
+                  фокус. Без сривове.
+                </p>
+              </div>
+              <div class="feature-card-group">
+                <span class="text-4xl"
+                  ><svg
+                    class="text-neon"
+                    style="filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6))"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"
+                    /></svg></span
+                ><span
+                  class="mt-3 block text-xs font-semibold uppercase tracking-wider text-neon"
+                  >Възстановяване</span
+                >
+                <h3 class="mt-1 text-lg font-bold">
+                  BCAA (Аминокиселини) и електролити
+                </h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Аминокиселини с разклонена верига с добавени електролити за
+                  хидратация.
+                </p>
+              </div>
+              <div class="feature-card-group">
+                <span class="text-4xl"
+                  ><svg
+                    class="text-neon"
+                    style="filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6))"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6Z"
+                    />
+                    <path d="M18 12v.01" />
+                    <path
+                      d="M2 16.3c2.2-2 4-4 4-4.3v-8c0-.3-1.8-2.3-4-4.3C2 2.6 2 8 2 12s0 9.4 0 9.4c2-2 4-4 4-4.3Z"
+                    /></svg></span
+                ><span
+                  class="mt-3 block text-xs font-semibold uppercase tracking-wider text-neon"
+                  >Здраве</span
+                >
+                <h3 class="mt-1 text-lg font-bold">Омега-3 рибено масло</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  Високо ефективна EPA/DHA за здравето на ставите и сърцето.
+                </p>
+              </div>
+              <div class="feature-card-group">
+                <span class="text-4xl"
+                  ><svg
+                    class="text-neon"
+                    style="filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6))"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"
+                    />
+                    <path d="M8.5 8.5v.01" />
+                    <path d="M16 15.5v.01" />
+                    <path d="M12 12v.01" />
+                    <path d="M11 17v.01" />
+                    <path d="M7 14v.01" /></svg></span
+                ><span
+                  class="mt-3 block text-xs font-semibold uppercase tracking-wider text-neon"
+                  >Снакове</span
+                >
+                <h3 class="mt-1 text-lg font-bold">Протеинови барове</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  20g протеин, ниско съдържание на захар. Перфектна закуска след
+                  тренировка.
+                </p>
+              </div>
+              <div class="feature-card-group">
+                <span class="text-4xl"
+                  ><svg
+                    class="text-neon"
+                    style="filter: drop-shadow(0 0 8px rgba(74, 222, 128, 0.6))"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1em"
+                    height="1em"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M6 18h8" />
+                    <path d="M3 22h18" />
+                    <path d="M14 22a7 7 0 1 0 0-14h-1" />
+                    <path d="M9 14h2" />
+                    <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" />
+                    <path
+                      d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"
+                    /></svg></span
+                ><span
+                  class="mt-3 block text-xs font-semibold uppercase tracking-wider text-neon"
+                  >Възстановяване</span
+                >
+                <h3 class="mt-1 text-lg font-bold">Глутамин на прах</h3>
+                <p class="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  L-глутамин за здравето на червата, имунна подкрепа и по-бързо
+                  възстановяване.
+                </p>
+              </div>
+            </div>
+            <div class="mx-auto mt-16 max-w-2xl text-center">
+              <p class="text-sm text-muted-foreground">
+                Продуктите могат да варират всеки месец. Всички артикули са в
+                пълен размер.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--/$-->
+    </main>
+    <footer class="border-t border-border/50 bg-background">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid gap-12 md:grid-cols-4">
+          <div class="md:col-span-1">
+            <div class="flex items-center gap-2">
+              <img src="logo.png" alt="FuelBox Logo" class="h-8 w-auto" />
+              <span class="text-lg font-bold text-foreground">FuelBox</span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Премиум фитнес добавки, подбрани и доставяни месечно. Заредете
+              своите резултати.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-foreground"
+            >
+              Разгледайте
+            </h4>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <a
+                  href="how-it-works.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >Как работи</a
+                >
+              </li>
+              <li>
+                <a
+                  href="plans.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >Планове &amp; Цени</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon active"
+                  href="whats-inside.html"
+                  data-status="active"
+                  aria-current="page"
+                  >Какво има вътре</a
+                >
+              </li>
+              <li>
+                <a
+                  href="testimonials.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >Отзиви</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-foreground"
+            >
+              Компания
+            </h4>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >За нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="faq.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >Чести въпроси</a
+                >
+              </li>
+              <li>
+                <span class="text-sm text-muted-foreground"
+                  >Условия за ползване</span
+                >
+              </li>
+              <li>
+                <span class="text-sm text-muted-foreground">Поверителност</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-foreground"
+            >
+              Контакти
+            </h4>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <span class="text-sm text-muted-foreground"
+                  >hello@fuelbox.com</span
+                >
+              </li>
+              <li class="flex gap-3 pt-2">
+                <span
+                  class="text-xs font-medium text-muted-foreground transition-colors hover:text-neon cursor-pointer"
+                  >Instagram</span
+                ><span
+                  class="text-xs font-medium text-muted-foreground transition-colors hover:text-neon cursor-pointer"
+                  >Twitter</span
+                ><span
+                  class="text-xs font-medium text-muted-foreground transition-colors hover:text-neon cursor-pointer"
+                  >TikTok</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-border/50 pt-8 text-center">
+          <p class="text-xs text-muted-foreground">
+            ©
+            <!-- -->2026<!-- -->
+            FuelBox. Всички права запазени.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
