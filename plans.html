@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Абонамент Планове — FuelBox</title>
+    <meta name="author" content="FuelBox" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="FuelBox — Премиум фитнес абонамент" />
+    <meta
+      name="twitter:description"
+      content="Месечни подбрани фитнес добавки, доставяни до вратата ви. Протеин, витамини и още."
+    />
+    <meta
+      name="description"
+      content="Изберете от планове Базов, Про или Елит. Безплатна доставка. Отменете по всяко време."
+    />
+    <meta property="og:title" content="Абонамент Планове — FuelBox" />
+    <meta
+      property="og:description"
+      content="Премиум планове за добавки от 29€/мес."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  
+    <link rel="icon" type="image/png" href="logo.png">
+  </head>
+  <body>
+    <header
+      class="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl"
+    >
+      <div
+        class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+      >
+        <a href="index.html" class="flex items-center gap-2">
+          <img src="logo.png" alt="FuelBox Logo" class="h-8 w-auto" />
+          <span class="text-lg font-bold tracking-tight text-foreground"
+            >FuelBox</span
+          >
+        </a>
+        <nav class="hidden items-center gap-1 lg:flex">
+          <a href="index.html" class="nav-link">Начало</a
+          ><a href="how-it-works.html" class="nav-link">Как работи</a
+          ><a
+            class="nav-link-active"
+            href="plans.html"
+            data-status="active"
+            aria-current="page"
+            >Планове</a
+          ><a href="whats-inside.html" class="nav-link">Какво има вътре</a
+          ><a href="testimonials.html" class="nav-link">Отзиви</a
+          ><a href="about.html" class="nav-link">За нас</a
+          ><a href="faq.html" class="nav-link">Чести въпроси</a>
+        </nav>
+        <div class="hidden lg:flex lg:items-center lg:gap-8">
+          <div class="flex items-center gap-2" style="margin-right: 1.5rem">
+            <button class="text-sm font-semibold text-neon">BG</button
+            ><span class="text-border">/</span
+            ><button
+              onclick="switchLanguage('en')"
+              class="text-sm font-semibold text-muted-foreground hover:text-neon transition-colors"
+            >
+              EN
+            </button>
+          </div>
+          <a
+            class="active"
+            href="plans.html"
+            data-status="active"
+            aria-current="page"
+            ><button class="btn-primary">Абонирай се</button></a
+          >
+        </div>
+        <button
+          class="flex h-10 w-10 items-center justify-center rounded-md text-foreground lg:hidden"
+          aria-label="Toggle menu"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div
+        class="overflow-hidden transition-all duration-300 ease-in-out border-t border-border/50 bg-background/95 backdrop-blur-xl lg:hidden max-h-0 opacity-0 border-t-transparent"
+      >
+        <nav class="flex flex-col gap-1 p-4">
+          <a href="index.html" class="nav-link-mobile">Начало</a
+          ><a href="how-it-works.html" class="nav-link-mobile">Как работи</a
+          ><a
+            class="nav-link-mobile-active"
+            href="plans.html"
+            data-status="active"
+            aria-current="page"
+            >Планове</a
+          ><a href="whats-inside.html" class="nav-link-mobile"
+            >Какво има вътре</a
+          ><a href="testimonials.html" class="nav-link-mobile">Отзиви</a
+          ><a href="about.html" class="nav-link-mobile">За нас</a
+          ><a href="faq.html" class="nav-link-mobile">Чести въпроси</a>
+          <div
+            class="mt-4 flex items-center justify-center gap-4 rounded-md border border-border/50 py-2"
+          >
+            <button class="text-sm font-semibold text-neon">BG</button
+            ><span class="text-border">/</span
+            ><button
+              onclick="switchLanguage('en')"
+              class="text-sm font-semibold text-muted-foreground hover:text-neon transition-colors"
+            >
+              EN
+            </button>
+          </div>
+          <a
+            class="mt-2 active"
+            href="plans.html"
+            data-status="active"
+            aria-current="page"
+            ><button class="btn-primary-lg-full">Абонирай се</button></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main class="pt-16">
+      <!--$-->
+      <div>
+        <section class="py-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mx-auto max-w-3xl text-center">
+              <p class="section-subtitle">Цени</p>
+              <h1 class="mt-3 text-4xl font-extrabold sm:text-5xl">
+                Намерете вашия
+                <span class="text-gradient-neon">Перфектен план</span>
+              </h1>
+              <p class="mt-6 text-lg text-muted-foreground">
+                Всички планове включват безплатна доставка, лабораторно тествани
+                продукти и свободата да отмените по всяко време.
+              </p>
+            </div>
+            <div class="mt-16 grid gap-8 lg:grid-cols-3">
+              <div
+                class="relative rounded-2xl border p-8 transition-all border-border/50 bg-card hover:border-neon/30"
+              >
+                <h3 class="text-xl font-bold">Базов</h3>
+                <p class="mt-1 text-sm text-muted-foreground">
+                  Перфектно за начинаещи или тези, които искат основното.
+                </p>
+                <div class="mt-6">
+                  <span class="text-4xl font-extrabold">$<!-- -->29</span
+                  ><span class="text-muted-foreground">/мес</span>
+                </div>
+                <ul class="mt-6 space-y-3">
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Суроватъчен протеин (1 lb)
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Ежедневен мултивитамин
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Електролитен микс
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Безплатна доставка
+                  </li>
+                </ul>
+                <div class="mt-8">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 cursor-pointer border-2 border-neon text-neon bg-transparent glow-neon-sm hover:scale-105 hover:shadow-[0_0_25px_oklch(0.82_0.22_145/40%)] hover:text-neon-foreground hover:bg-neon active:scale-[0.97] transition-all duration-200 h-12 rounded-lg px-8 text-base w-full"
+                  >
+                    Абонирай се
+                  </button>
+                </div>
+              </div>
+              <div
+                class="relative rounded-2xl border p-8 transition-all border-neon bg-card glow-neon scale-105"
+              >
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span
+                    class="rounded-full bg-neon px-4 py-1 text-xs font-bold text-neon-foreground"
+                    >Най-популярен</span
+                  >
+                </div>
+                <h3 class="text-xl font-bold">Про</h3>
+                <p class="mt-1 text-sm text-muted-foreground">
+                  Нашият най-популярен план. Страхотна стойност за сериозни
+                  трениращи.
+                </p>
+                <div class="mt-6">
+                  <span class="text-4xl font-extrabold">$<!-- -->49</span
+                  ><span class="text-muted-foreground">/мес</span>
+                </div>
+                <ul class="mt-6 space-y-3">
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Суроватъчен протеин Изолат (2 lb)
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Креатин монохидрат
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Ежедневен мултивитамин
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Азотен бустер
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >BCAA (Аминокиселини)
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Безплатна доставка
+                  </li>
+                </ul>
+                <div class="mt-8">
+                  <button class="btn-primary-lg-full">Абонирай се</button>
+                </div>
+              </div>
+              <div
+                class="relative rounded-2xl border p-8 transition-all border-border/50 bg-card hover:border-neon/30"
+              >
+                <h3 class="text-xl font-bold">Елит</h3>
+                <p class="mt-1 text-sm text-muted-foreground">
+                  Най-добрата комбинация за атлети, търсещи върхови постижения.
+                </p>
+                <div class="mt-6">
+                  <span class="text-4xl font-extrabold">$<!-- -->79</span
+                  ><span class="text-muted-foreground">/мес</span>
+                </div>
+                <ul class="mt-6 space-y-3">
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Премиум суроватъчен изолат (2 lb)
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Креатин монохидрат
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Мултивитаминен комплекс
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Азотен бустер (2 вкуса)
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >BCAA (Аминокиселини) и глутамин
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Омега-3 рибено масло
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Протеинови барове (4 бр.)
+                  </li>
+                  <li class="flex items-center gap-3 text-sm">
+                    <span
+                      class="flex h-5 w-5 items-center justify-center rounded-full bg-neon/20 text-xs text-neon"
+                      >✓</span
+                    >Безплатна приоритетна доставка
+                  </li>
+                </ul>
+                <div class="mt-8">
+                  <button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 cursor-pointer border-2 border-neon text-neon bg-transparent glow-neon-sm hover:scale-105 hover:shadow-[0_0_25px_oklch(0.82_0.22_145/40%)] hover:text-neon-foreground hover:bg-neon active:scale-[0.97] transition-all duration-200 h-12 rounded-lg px-8 text-base w-full"
+                  >
+                    Абонирай се
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="mx-auto mt-16 max-w-2xl rounded-2xl border border-border/50 bg-card p-8 text-center"
+            >
+              <h3 class="text-lg font-bold">🔒 Гаранция без риск</h3>
+              <p class="mt-2 text-sm text-muted-foreground">
+                Не сте доволни? Получете пълно възстановяване на сумата за
+                първата си кутия. Без въпроси. Отменете абонамента си по всяко
+                време с едно кликване.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--/$-->
+    </main>
+    <footer class="border-t border-border/50 bg-background">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div class="grid gap-12 md:grid-cols-4">
+          <div class="md:col-span-1">
+            <div class="flex items-center gap-2">
+              <img src="logo.png" alt="FuelBox Logo" class="h-8 w-auto" />
+              <span class="text-lg font-bold text-foreground">FuelBox</span>
+            </div>
+            <p class="mt-4 text-sm leading-relaxed text-muted-foreground">
+              Премиум фитнес добавки, подбрани и доставяни месечно. Заредете
+              своите резултати.
+            </p>
+          </div>
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-foreground"
+            >
+              Разгледайте
+            </h4>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <a
+                  href="how-it-works.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >Как работи</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon active"
+                  href="plans.html"
+                  data-status="active"
+                  aria-current="page"
+                  >Планове &amp; Цени</a
+                >
+              </li>
+              <li>
+                <a
+                  href="whats-inside.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >Какво има вътре</a
+                >
+              </li>
+              <li>
+                <a
+                  href="testimonials.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >Отзиви</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-foreground"
+            >
+              Компания
+            </h4>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <a
+                  href="about.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >За нас</a
+                >
+              </li>
+              <li>
+                <a
+                  href="faq.html"
+                  class="text-sm text-muted-foreground transition-colors hover:text-neon"
+                  >Чести въпроси</a
+                >
+              </li>
+              <li>
+                <span class="text-sm text-muted-foreground"
+                  >Условия за ползване</span
+                >
+              </li>
+              <li>
+                <span class="text-sm text-muted-foreground">Поверителност</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4
+              class="text-sm font-semibold uppercase tracking-wider text-foreground"
+            >
+              Контакти
+            </h4>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <span class="text-sm text-muted-foreground"
+                  >hello@fuelbox.com</span
+                >
+              </li>
+              <li class="flex gap-3 pt-2">
+                <span
+                  class="text-xs font-medium text-muted-foreground transition-colors hover:text-neon cursor-pointer"
+                  >Instagram</span
+                ><span
+                  class="text-xs font-medium text-muted-foreground transition-colors hover:text-neon cursor-pointer"
+                  >Twitter</span
+                ><span
+                  class="text-xs font-medium text-muted-foreground transition-colors hover:text-neon cursor-pointer"
+                  >TikTok</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-12 border-t border-border/50 pt-8 text-center">
+          <p class="text-xs text-muted-foreground">
+            ©
+            <!-- -->2026<!-- -->
+            FuelBox. Всички права запазени.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
