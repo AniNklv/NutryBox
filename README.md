@@ -88,7 +88,4 @@ Your Monthly Fitness Fuel Delivered.
 
 ---
 
-## 6. Линк към проекта
 
-Сайтът е проектиран да бъде хостнат на GitHub Pages:
-https://username.github.io/flex-fuel-box-main/
