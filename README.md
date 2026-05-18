@@ -64,8 +64,7 @@ Your Monthly Fitness Fuel Delivered.
 
 **Използвани технологии:**
 - HTML5 (семантичен)
-- CSS3 (Vanilla + Custom Properties)
-- Bootstrap 5.3 (през CDN за responsive grid и компоненти)
+- CSS3 (Tailwind CSS)
 - JavaScript (Vanilla JS за модален прозорец, валидация на форма и Intersection Observer)
 - *Забележка:* Проектът е напълно статичен, без Node.js, Vite или React.
 
@@ -80,7 +79,7 @@ Your Monthly Fitness Fuel Delivered.
 ## 5. Използване на изкуствен интелект
 
 **Използвани инструменти:**
-- Google Gemini (като асистент Antigravity)
+- Google Gemini
 
 **За какво са използвани:**
 - Структуриране и пренаписване на съдържанието на сайта, за да отговаря на заданието от PDF-а.
